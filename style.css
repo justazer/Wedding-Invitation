@@ -1,12 +1,14 @@
  :root {
      --blue: #00c8ff;
      --bg: #0a0a0a;
+     --white: #ffffff;
+     --black: #000000;
      --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
  }
 
  body {
      font-size: 1.2rem;
-     font-family: 'Courier Prime', cursive;
+     font-family: 'Arial', sans-serif;
  }
 
  .hero::before {
@@ -16,11 +18,12 @@
      left: 0;
      width: 100%;
      height: 100%;
-     background-image: url(img/seaworld.jpg);
+     background-image: url(img/seaworld2.jpg);
      background-attachment: fixed;
      background-position: center center;
+     background-size: cover;
      z-index: -1;
-     filter: grayscale();
+
  }
 
  .hero {
@@ -32,11 +35,12 @@
  .hero h4,
  .hero p {
      text-shadow: var(--shadow);
+     font-size: 1rem;
  }
 
  .hero h1 {
      font-family: 'Cookie', cursive;
-     font-size: 4rem;
+     font-size: 4.5rem;
  }
 
  .hero p {
@@ -44,13 +48,13 @@
  }
 
  .hero a {
-     color: var(--blue);
+     color: var(--black);
      background-color: white;
-     box-shadow: val(--shadow);
+     box-shadow: var(--shadow);
+     background-clip: padding-box;
  }
 
  .hero a:hover {
-     background-color: var(--pink);
      color: white;
  }
 
@@ -58,12 +62,23 @@
  /* Laptop */
  @media (max-width: 992px) {
      html {
-         font-size: 75%;
+         font-size: 80%;
+     }
+
+     .hero a {
+        padding: 1%;
      }
 
      .simply-countdown>.simply-section {
-         padding: 70px;
-     }
+        padding: 50px;
+        margin: 15px;
+    }
+
+    .simply-countdown>.simply-section .simply-amount {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.5rem;
+        line-height: 5rem;
+    }
  }
 
  /* Tablet*/
@@ -71,6 +86,7 @@
      html {
          font-size: 65%;
      }
+
 
      .simply-countdown>.simply-section {
          padding: 60px;
@@ -84,8 +100,18 @@
          font-size: 60%;
      }
 
-     .simply-countdown>.simply-section {
-         padding: 40px;
-         margin: 3px;
+     .hero a {
+        padding: 1%;
      }
+
+     .simply-countdown>.simply-section {
+         padding: 30px;
+         margin: 15px;
+     }
+
+     .simply-countdown>.simply-section .simply-amount {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
  }
