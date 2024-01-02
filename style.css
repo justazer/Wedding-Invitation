@@ -89,7 +89,8 @@
      padding-bottom: 5rem;
  }
 
- .home h2 {
+ .home h2,
+ .info h2 {
      color: var(--blue);
      font-family: 'Cookie', cursive;
      font-size: 4.5rem;
@@ -106,7 +107,61 @@
      color: var(--black);
  }
 
+ .home .couple {
+     margin-top: 100px;
+ }
+
+ .home .couple h3 {
+     font-family: 'Cookie', cursive;
+     font-size: 2.4rem;
+     color: var(--blue);
+ }
+
+ .home .couple img {
+     width: 100%;
+ }
+
+ .home .heart {
+     width: 50px;
+     height: 50px;
+     background-color: white;
+     display: flex;
+     border-radius: 50%;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%) translateY(65px);
+ }
+
+ .home .heart i {
+     margin: auto;
+     color: var(--blue);
+ }
+
+ .info {
+     background-color: var(--bg);
+     color: white;
+     padding-top: 10rem;
+     padding-bottom: 8rem;
+ }
+
+.info .alamat {
+    font-size: 1.1rem;
+}
+
+.info .description{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
  /* Media Query */
+ /* Extra Large */
+ @media (max-width: 1200px) {
+     .home .heart {
+         transform: translateX(-50%) translateY(45px);
+     }
+ }
+
  /* Laptop */
  @media (max-width: 992px) {
      html {
@@ -126,6 +181,10 @@
          font-family: 'Arial', sans-serif;
          font-size: 1.5rem;
          line-height: 2rem;
+     }
+
+     .home .heart {
+         display: none;
      }
  }
 
@@ -148,6 +207,10 @@
          font-family: 'Arial', sans-serif;
          font-size: 1.5rem;
          line-height: 2rem;
+     }
+
+     .home .heart {
+         display: none;
      }
  }
 
@@ -174,5 +237,9 @@
 
      .mynavbar .nav-link {
          text-align: center;
+     }
+
+     .home .heart {
+         display: none;
      }
  }
