@@ -59,6 +59,53 @@
      color: white;
  }
 
+ .mynavbar {
+     background-color: rgba(255, 255, 255, 0.4) !important;
+     backdrop-filter: blur(5px);
+ }
+
+ .mynavbar .offcanvas {
+     height: 100vh;
+ }
+
+ .mynavbar .navbar-brand,
+ .mynavbar .offcanvas-title {
+     font-family: 'Cookie', cursive;
+     font-size: 2rem;
+     font-weight: bold;
+ }
+
+ .mynavbar .nav-link {
+     /* font-weight: 600; */
+     text-transform: uppercase;
+ }
+
+ .home {
+     background-image: url(img/flower.png);
+     background-size: cover;
+     min-height: 150vh;
+     margin-top: -2rem;
+     padding-top: 10rem;
+     padding-bottom: 5rem;
+ }
+
+ .home h2 {
+     color: var(--blue);
+     font-family: 'Cookie', cursive;
+     font-size: 4.5rem;
+ }
+
+ .home h3 {
+     color: var(--black);
+     font-size: 1.5rem;
+     margin-bottom: 1rem;
+ }
+
+ .home p {
+     font-size: 1.1rem;
+     color: var(--black);
+ }
+
  /* Media Query */
  /* Laptop */
  @media (max-width: 992px) {
@@ -84,24 +131,24 @@
 
  /* Tablet*/
  @media (max-width: 768px) {
-    html {
-        font-size: 60%;
-    }
+     html {
+         font-size: 60%;
+     }
 
-    .hero a {
-        padding: 1%;
-    }
+     .hero a {
+         padding: 1%;
+     }
 
-    .simply-countdown>.simply-section {
-        padding: 45px;
-        margin: 15px;
-    }
+     .simply-countdown>.simply-section {
+         padding: 45px;
+         margin: 15px;
+     }
 
-    .simply-countdown>.simply-section .simply-amount {
-        font-family: 'Arial', sans-serif;
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
+     .simply-countdown>.simply-section .simply-amount {
+         font-family: 'Arial', sans-serif;
+         font-size: 1.5rem;
+         line-height: 2rem;
+     }
  }
 
  /* Mobile Phone */
@@ -123,5 +170,9 @@
          font-family: 'Arial', sans-serif;
          font-size: 1.5rem;
          line-height: 2rem;
+     }
+
+     .mynavbar .nav-link {
+         text-align: center;
      }
  }
