@@ -92,7 +92,8 @@
  }
 
  .home h2,
- .info h2 {
+ .info h2,
+ .story h2 {
      color: var(--blue);
      font-family: 'Cookie', cursive;
      font-size: 4.5rem;
@@ -147,36 +148,36 @@
      padding-bottom: 8rem;
  }
 
-.info .alamat {
-    font-size: 1.1rem;
-}
+ .info .alamat {
+     font-size: 1.1rem;
+ }
 
-.info .description{
-    font-size: 1rem;
-    font-weight: 300;
-}
+ .info .description {
+     font-size: 1rem;
+     font-weight: 300;
+ }
 
-.info .card{
-background-color: rgba(255, 255, 255, 0.2) !important;
-color: white !important;
-border: 1px white solid;
-}
+ .info .card {
+     background-color: rgba(255, 255, 255, 0.2) !important;
+     color: white !important;
+     border: 1px white solid;
+ }
 
-.info .card-header {
-    border-bottom: 1px white solid;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-}
+ .info .card-header {
+     border-bottom: 1px white solid;
+     text-transform: uppercase;
+     letter-spacing: 0.1rem;
+ }
 
-.info .card-body{
-    font-size: 1rem;
-}
+ .info .card-body {
+     font-size: 1rem;
+ }
 
-.info .card-footer {
-    border-top: 1px white solid;
-    font-size: 0.9rem;
-    font-weight: 300;
-}
+ .info .card-footer {
+     border-top: 1px white solid;
+     font-size: 0.9rem;
+     font-weight: 300;
+ }
 
  /* Media Query */
  /* Extra Large */
@@ -237,8 +238,8 @@ border: 1px white solid;
          display: none;
      }
 
-     .sticky-top{
-        overflow: hidden;
+     .sticky-top {
+         overflow: hidden;
      }
  }
 
